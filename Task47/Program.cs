@@ -4,9 +4,9 @@
 //1 - 3,3 8 - 9,9
 //8 7,8 - 7,1 9
 
-Console.WriteLine("Введите количество строк");
+Console.WriteLine("Введите количество строк:");
 int lines = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите количество столбцов");
+Console.WriteLine("Введите количество столбцов:");
 int columns = Convert.ToInt32(Console.ReadLine());
 double[,] numbers = new double[lines, columns];
 System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-En");
