@@ -12,7 +12,6 @@ double[,] numbers = new double[lines, columns];
 System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-En");
 FillMatrixRandomNumbers(numbers);
 PrintMatrix(numbers);
-Random random = new Random();
 
 void FillMatrixRandomNumbers(double[,] matrix)
 {
