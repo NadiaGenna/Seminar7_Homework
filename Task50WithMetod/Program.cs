@@ -38,16 +38,19 @@ Console.Write("Введите номер строки: ");
 int pos1 = Convert.ToInt32(Console.ReadLine()) - 1;
 Console.Write("Введите номер столбца: ");
 int pos2 = Convert.ToInt32(Console.ReadLine()) - 1;
+int i = 5;
+int j = 7;
+int[,] matrix = new int[i, j];
 
-if (pos1 < 0 | pos1 > min -1 | pos2 < 0 | pos2 > max - 1)
+if (pos1 < 0 | pos1 > matrix.GetLength(0) - 1 | pos2 < 0 | pos2 > matrix.GetLength(1) - 1)
 {
     Console.WriteLine("Элемент не существует");
 }
 else
 {
-    Console.WriteLine("Значение элемента массива = {0}", );
+    Console.WriteLine("Значение элемента массива = {0}", matrix[pos1, pos2]);
 
-int[,] array2D = CreateMatrixRndInt(3, 4, -9, 9);
+int[,] array2D = CreateMatrixRndInt(5, 7, -9, 9);
 Console.WriteLine();
 PrintMatrix(array2D);
 }
